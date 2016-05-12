@@ -64,12 +64,11 @@
     
     NSEntityDescription *entDescription = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:context];
     
+    NSPredicate *predicate  = [NSPredicate predicateWithFormat:@"firstname like %@ and lastname like %@", self.firstnameTextField.text,self.lastnameTextField.text];
+    
     NSFetchRequest *request = [[NSFetchRequest alloc]init];
     
     [request setEntity:entDescription];
-    
-    NSPredicate *predicate  = [NSPredicate predicateWithFormat:@"firstname like %@ and lastname like %@", self.firstnameTextField.text,self.lastnameTextField.text];
-    
     [request setPredicate:predicate];
     
     NSError *error;
@@ -80,7 +79,7 @@
         self.displayLabel.text = @"No records found";
     }else{
         NSString *firstName;
-                NSString *lastName;
+        NSString *lastName;
         
         for (NSManagedObject *obj in matchingData) {
             firstName = [obj valueForKey:@"firstname"];
@@ -95,22 +94,17 @@
     NSEntityDescription *entDescription = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:context];
     
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    
-    [request setEntity:entDescription];
-    
-    
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"firstname like %@ and lastname like %@", self.firstnameTextField.text, self.lastnameTextField.text];
     
+    [request setEntity:entDescription];
     [request setPredicate:predicate];
     
-    
     NSError *error;
-    
     
     NSArray *matchingData = [context executeFetchRequest:request error:&error];
     int count = 0;
     if(matchingData.count == 0){
-      self.displayLabel.text = @"No Person deleted";
+      self.displayLabel.text = @"No person deleted";
     }else{
         for(NSManagedObject * obj in matchingData){
             count++;
