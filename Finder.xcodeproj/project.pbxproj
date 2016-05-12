@@ -12,6 +12,9 @@
 		822D14791CE3E9E60010D4C1 /* Finder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 822D14771CE3E9E60010D4C1 /* Finder.xcdatamodeld */; };
 		822D147B1CE3E9E60010D4C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822D147A1CE3E9E60010D4C1 /* Assets.xcassets */; };
 		822D147E1CE3E9E60010D4C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822D147C1CE3E9E60010D4C1 /* LaunchScreen.storyboard */; };
+		822D14871CE3EAB20010D4C1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 822D14861CE3EAB20010D4C1 /* Person.m */; settings = {ASSET_TAGS = (); }; };
+		822D148B1CE3EB470010D4C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822D14891CE3EB470010D4C1 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		822D148C1CE3EB470010D4C1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822D148A1CE3EB470010D4C1 /* ViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,11 @@
 		822D147A1CE3E9E60010D4C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		822D147D1CE3E9E60010D4C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		822D147F1CE3E9E60010D4C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822D14851CE3EAB20010D4C1 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		822D14861CE3EAB20010D4C1 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		822D14881CE3EB470010D4C1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		822D14891CE3EB470010D4C1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		822D148A1CE3EB470010D4C1 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,11 @@
 				822D147C1CE3E9E60010D4C1 /* LaunchScreen.storyboard */,
 				822D147F1CE3E9E60010D4C1 /* Info.plist */,
 				822D14771CE3E9E60010D4C1 /* Finder.xcdatamodeld */,
+				822D14851CE3EAB20010D4C1 /* Person.h */,
+				822D14881CE3EB470010D4C1 /* ViewController.h */,
+				822D14891CE3EB470010D4C1 /* ViewController.m */,
+				822D148A1CE3EB470010D4C1 /* ViewController.xib */,
+				822D14861CE3EAB20010D4C1 /* Person.m */,
 				822D14711CE3E9E60010D4C1 /* Supporting Files */,
 			);
 			path = Finder;
@@ -133,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				822D147B1CE3E9E60010D4C1 /* Assets.xcassets in Resources */,
+				822D148C1CE3EB470010D4C1 /* ViewController.xib in Resources */,
 				822D147E1CE3E9E60010D4C1 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,7 +160,9 @@
 			files = (
 				822D14761CE3E9E60010D4C1 /* AppDelegate.m in Sources */,
 				822D14791CE3E9E60010D4C1 /* Finder.xcdatamodeld in Sources */,
+				822D14871CE3EAB20010D4C1 /* Person.m in Sources */,
 				822D14731CE3E9E60010D4C1 /* main.m in Sources */,
+				822D148B1CE3EB470010D4C1 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
